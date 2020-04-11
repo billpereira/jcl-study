@@ -49,6 +49,7 @@ To Start let's create our first job, our HELLOWRLD. All jobs need to contain at 
   - SYSAFF - Sometimes we have more systems available working together on what we call as JES Complex, so we can inform in which system it needs to run
 
 - EXEC word identify our EXEC Statement, we also call each of this as Steps, it identify a program or a procedure to be executed
-  - PGM - On our exec, we are calling a program, an utility, called `IEFBR14`. 
+  - PGM - On our exec, we are calling a program an utility, called `IEFBR14`. 
   - IEFBR14 - It is a placeholder that returns the exit status zero, similar to the true command on UNIX-like systems.
 
+<div align="center"><img src='./img/hello.gif' /></div>
