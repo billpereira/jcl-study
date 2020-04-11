@@ -52,4 +52,17 @@ To Start let's create our first job, our HELLOWRLD. All jobs need to contain at 
   - PGM - On our exec, we are calling a program an utility, called `IEFBR14`. 
   - IEFBR14 - It is a placeholder that returns the exit status zero, similar to the true command on UNIX-like systems.
 
+In a real world we would already be able `submit` our job:
+
 <div align="center"><img src='./img/hello.gif' /></div>
+
+### Challenge 1 - Build a Hello World JCL
+
+Create a JCL named HELLOJOB with accounting information to #JCLGIT, where all messages from execution goes to message class X.
+It needs a step called STEP1 that will call IEFBR14.
+
+To validate your solution run the following command:
+
+```
+node scripts/verify-1.js
+```
