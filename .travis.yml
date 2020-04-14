@@ -1,0 +1,16 @@
+language: node_js
+node_js: v8.16.1
+sudo: required
+
+before_install:
+  # - npm config set @brightside:registry https://api.bintray.com/npm/ca/brightside
+  # - npm install -g @brightside/core@lts-incremental
+  - npm install -g @zowe/cli@zowe-v1-lts
+  - zowe --version
+  - zowe profiles cre zosmf-profile CICD --host $ZOSMF_HOST --port $ZOSMF_PORT --user $ZOSMF_USER --password $ZOSMF_PW --reject-unauthorized false
+
+script:
+  - if [ "$TRAVIS_BRANCH" = "CHALLENGE-1" ]; then zowe zos-jobs submit local-file HELLOJOB.jcl --wfo ; fi
+  # - if [ "$TRAVIS_BRANCH" = "development" ]; then npm run test ; fi
+  # - if [ "$TRAVIS_BRANCH" = "master" ]; then  npm run servicenow ; fi
+  # - if [ "$TRAVIS_BRANCH" = "master" ]; then npm run deploy ; fi
