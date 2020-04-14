@@ -1,7 +1,6 @@
 const fs = require("fs");
 
 const getLines = (fileName) => {
-  
   let data = "";
   try {
     data = fs.readFileSync(`./${fileName}`, "utf8").toUpperCase();
@@ -9,7 +8,7 @@ const getLines = (fileName) => {
     data = err;
   }
 
-  return lines = data.toString().toUpperCase().split("\n");
+  return (lines = data.toString().toUpperCase().split("\n"));
 };
 
 module.exports = getLines;

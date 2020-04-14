@@ -1,5 +1,4 @@
 const checkMsgClass = (lines, msgclass) => {
-
   const lineOneSplitted = lines[0].split(",");
 
   const msgParm = lineOneSplitted.filter(

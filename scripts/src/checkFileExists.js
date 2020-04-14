@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const checkFileExists =  (fileName) => {
+const checkFileExists = (fileName) => {
   try {
     fs.statSync(`./${fileName}`);
     return true;
