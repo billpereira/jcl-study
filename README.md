@@ -15,9 +15,22 @@ Scripts included:
 ```
 ## Getting Started
 
-Clone this repository:
+To get started fork this repository.
+
+Clone the forked repository:
 ```
-git clone git@github.com:billpereira/jcl-study.git
+git clone git@github.com:<your-git-id>/jcl-study.git
+```
+
+Issue the following command to link your repository with the original one:
+```
+$ git remote add upstream git@github.com:billpereira/jcl-study.git
+```
+
+All challenges have their own branch that allows you to test if your solution would run without errors. Use git checkout to navigate through the challenge branches
+
+```
+git checkout CHALLENGE-n
 ```
 
 Through the <strong>JCL</strong> we can tell the system what programs to run, what files we are handling. This unit where we code our JCL is called <strong>Job</strong>.
