@@ -4,4 +4,3 @@
 //* Hello World comments
 //****
 //*  
-//STEP1    EXEC PGM=IEFBR14
