@@ -11,7 +11,7 @@ To follow this you need to have:
 
 Scripts included:
 ```
-
+verify-1.js - checks for Challenge 1
 ```
 ## Getting Started
 
